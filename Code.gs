@@ -28,7 +28,7 @@ function checkForChange() {
   if(text.indexOf(find) != -1){
     
     var sheet = SpreadsheetApp.getActiveSheet();  
-    var cell = sheet.getRange(1,1);
+    var cell = sheet.getRange(1,1); // to get range
     
     if(cell.getValue() == ''){
       cell.setValue(text);
